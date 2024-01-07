@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Business from './components/Business';
+import BusinessList from "./components/BusinessList";
 
 function App() {
   const [businessess, setBusinesses] = useState([
@@ -40,15 +40,7 @@ function App() {
   return (
     <div className="App">
       <div className='container'>
-        <div class="row">
-          {businessess.map((business) => (
-            <div class="col-lg-4">
-              <Business
-                business={business}
-              />
-            </div>
-          ))}
-        </div>
+        <BusinessList businessess={businessess} />
       </div>
     </div>
   );
