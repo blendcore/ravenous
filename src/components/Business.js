@@ -1,21 +1,25 @@
+import './Business.css';
+
 export default function Business(props) {
     const { business } = props;
     return (
         <div className="card mb-3">
-            <img src={business.imageSrc} className="card-img-top" alt="Business Image" title="Business Image" />
+            <div class="ratio ratio-16x9">
+                <img src={business.imageSrc} className="object-fit-cover" alt="Business Image" title="Business Image" />
+            </div>
             <div className="card-body">
                 <h3 className="card-title">{business.name}</h3>
-                <div class="row">
-                    <div class="col">
-                        <p className="card-text">{business.address}</p>
-                        <p className="card-text">{business.city}</p>
-                        <p className="card-text">{business.state}</p>
-                        <p className="card-text">{business.zipCode}</p>
+                <div className="row">
+                    <div className="col">
+                        <p className="">{business.address}</p>
+                        <p className="">{business.city}</p>
+                        <p className="">{business.state}</p>
+                        <p className="">{business.zipCode}</p>
                     </div>
-                    <div class="col">
-                        <p className="card-text">{business.category}</p>
-                        <p className="card-text">{business.rating}</p>
-                        <p className="card-text">{business.reviewCount}</p>
+                    <div className="col">
+                        <p className="">{business.category}</p>
+                        <p className="">{business.rating}</p>
+                        <p className="">{business.reviewCount}</p>
                     </div>
                 </div>
             </div>
