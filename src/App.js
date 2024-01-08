@@ -1,5 +1,6 @@
 import { useState } from "react";
 import BusinessList from "./components/BusinessList";
+import SearchBar from "./components/SearchBar";
 
 function App() {
   const [businessess, setBusinesses] = useState([
@@ -40,6 +41,7 @@ function App() {
   return (
     <div className="App">
       <div className='container'>
+        <SearchBar />
         <BusinessList businessess={businessess} />
       </div>
     </div>
