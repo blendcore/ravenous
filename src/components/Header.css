@@ -1,0 +1,6 @@
+.header a {
+    font-size: 32px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-transform: lowercase;
+}
