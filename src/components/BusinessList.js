@@ -1,7 +1,6 @@
 import Business from './Business';
 
-export default function BusinessList(props) {
-    const { businessess } = props;
+const BusinessList = ({ businessess }) => {
     return (
         <div class="container">
             <h2 className='mb-5'>Our Businesses</h2>
@@ -9,6 +8,7 @@ export default function BusinessList(props) {
                 {businessess.map((business) => (
                     <div class="col-lg-4">
                         <Business
+                            key={business.name}
                             business={business}
                         />
                     </div>
@@ -17,3 +17,5 @@ export default function BusinessList(props) {
         </div>
     )
 }
+
+export default BusinessList;

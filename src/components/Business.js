@@ -1,11 +1,10 @@
 import './Business.css';
 
-export default function Business(props) {
-    const { business } = props;
+const Business = ({ business }) => {
     return (
         <div className="card mb-3">
             <div class="ratio ratio-16x9">
-                <img src={business.imageSrc} className="object-fit-cover" alt="Business Image" title="Business Image" />
+                <img src={business.imageSrc} className="object-fit-cover" alt={business.name} title="Business Image" />
             </div>
             <div className="card-body">
                 <h3 className="card-title">{business.name}</h3>
@@ -26,3 +25,5 @@ export default function Business(props) {
         </div>
     )
 }
+
+export default Business;

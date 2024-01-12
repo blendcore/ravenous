@@ -6,7 +6,7 @@ const sortByOptions = {
     "Most Reviewed": "review_count",
 };
 
-export default function SearchBar(props) {
+const SearchBar = () => {
     const renderSortByOptions = () => {
         return Object.keys(sortByOptions).map((sortByOption) => {
             let sortByOptionValue = sortByOptions[sortByOption];
@@ -29,3 +29,5 @@ export default function SearchBar(props) {
         </form>
     )
 }
+
+export default SearchBar;
