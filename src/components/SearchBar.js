@@ -4,7 +4,7 @@ import './SearchBar.css';
 const SearchBar = () => {
     const [search, setSearch] = useState();
     const [location, setLocation] = useState();
-    const [sortOption, setSortOption] = useState("Best Match")
+    const [sortOption, setSortOption] = useState("Best Match");
 
     const handleSearchChange = (e) => {
         setSearch(e.target.value);
@@ -15,7 +15,7 @@ const SearchBar = () => {
     }
 
     const handleSortOption = e => {
-        setSortOption(e.target.value)
+        setSortOption(e.target.value);
     }
 
     const handleSearch = (e) => {
@@ -26,7 +26,7 @@ const SearchBar = () => {
     return (
         <form className="search-bar" role="search" onSubmit={handleSearch}>
             <div className='container'>
-                <div class="btn-group btn-group-lg mb-3" role="group" aria-label="Basic radio toggle button group">
+                <div className="btn-group btn-group-lg mb-3" role="group" aria-label="Basic radio toggle button group">
                     <input
                         className='btn-check'
                         type="radio"
